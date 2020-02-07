@@ -1,4 +1,4 @@
 ---
 - name: Download a clean default.conf
-  get_url: url=http://10.15.39.100/files/default.conf dest=/etc/nginx/conf.d/default.conf force=yes
+  get_url: url=http://{{repo_host}}/files/default.conf dest=/etc/nginx/conf.d/default.conf force=yes
   notify: restart nginx
